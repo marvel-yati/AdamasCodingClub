@@ -1,3 +1,8 @@
+ASSIGNMENT FOR WEEK 2
+AUTHOR: DEBAYATI SARKAR
+
+
+
 f=open("abc.txt","w+")
 for i in range(10):
     f.write("This is line %d\r\n" %(i+1))
@@ -6,3 +11,6 @@ from spacy.en import English
 nlp=English()
 [(x.text,x.pos_)for x in nlp(unicode(sent))if x.pos_!=u'SPACE']
 [(u'The' ,u'DET'),(u'man' , u'NOUN'),(u'saw' ,u'VERB'),(u'the',u'DET'),(u'dog',u'NOUN'),(u'with' ,u'ADP'),(u'the',u'DET'),(u'telescope',u'NOUN'),(u'.',u'PUNCT')] 
+
+
+As for the complexity of the above program we can see only 1 loop which ranges from 1 to 10 so complexity will be O(n+1).
